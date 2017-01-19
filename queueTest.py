@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# testQueue.py
+# queueTest.py
 # CORRECT SPECIFICATION: (From Udacity/Testing The Queue)
 # The Queue class provides a fized-size FIFO queue of integers.
 # The constructor takes a single parameter: an integer >0 that
@@ -13,6 +13,17 @@
 #   or else returns None if the queue is empty.
 
 import array
+
+# Not used, but stored here for further analysis...
+def checkRep(self):
+    assert self.size >= 0 and self.size <= self.max
+    if self.tail > self.head:
+        assert (self.tail - self.head) == self.size
+    if self.tail < self.head:
+        assert (self.head - self.tail) == (self.max - self.size)
+    if self.tail == self.head:
+        assert (self.size == 0) or (self.size == self.max)
+    return
 
 class Queue:
     def __init__(self, size_max):
@@ -125,6 +136,8 @@ def test3():
         print "test 3d NOT OK"
         return
     print "test3 OK"
+
+
 
 test1()
 test2()
