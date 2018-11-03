@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ###############################################################################
-# python script: mypython.py        Author: Chris Kearns
+# python script: mypython.py        Author: Chris Kearns Sr.
 # e-mail: kearnsc@oregonstate.edu   Date: 26 Nov 2016
 # 1. When executed, creates 3 files in the same directory as mypython.py, each
 #    named differently (the name of which is up to the developer), which remain
